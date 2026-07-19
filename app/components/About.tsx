@@ -1,37 +1,37 @@
 export default function About() {
   return (
     <section
-      style={{
-        maxWidth: "1100px",
-        margin: "0 auto",
-        padding: "100px 20px",
-        textAlign: "center",
-      }}
+      id="about"
+      className="max-w-6xl mx-auto py-20 px-6"
     >
-      <h2
-        style={{
-          fontSize: "42px",
-          color: "#f57c00",
-          marginBottom: "20px",
-        }}
-      >
-        👨‍🌾 진제준 밀감농장
+      <h2 className="text-4xl font-bold text-center text-orange-600 mb-10">
+        🍊 진제준 밀감농장
       </h2>
 
-      <p
-        style={{
-          fontSize: "20px",
-          lineHeight: "1.8",
-          color: "#555",
-        }}
-      >
-        제주 서귀포의 맑은 공기와 따뜻한 햇살 속에서
-        <br />
-        정성껏 재배한 신선한 밀감을 산지에서 직접 보내드립니다.
-        <br /><br />
-        고객님께 가장 맛있는 밀감을 드리기 위해
-        항상 최고의 품질을 약속드립니다.
-      </p>
+      <div className="grid md:grid-cols-2 gap-10 items-center">
+
+        <img
+          src="/images/hero.jpg"
+          alt="제주 감귤"
+          className="rounded-xl shadow-lg"
+        />
+
+        <div>
+          <p className="text-lg leading-9 text-gray-700">
+            제주 자연의 맑은 공기와 따뜻한 햇살,
+            그리고 해풍을 맞으며 자란
+            신선한 노지감귤입니다.
+          </p>
+
+          <ul className="mt-8 space-y-4 text-lg">
+            <li>✅ 제주 청정지역 재배</li>
+            <li>✅ 산지 직송</li>
+            <li>✅ 당일 수확</li>
+            <li>✅ 정성껏 선별 후 발송</li>
+          </ul>
+        </div>
+
+      </div>
     </section>
   );
 }

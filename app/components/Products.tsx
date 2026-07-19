@@ -25,6 +25,7 @@ export default function Products() {
           fontSize: "20px",
           color: "#666",
           marginBottom: "60px",
+          lineHeight: "1.8",
         }}
       >
         정직한 농부의 마음으로,
@@ -43,7 +44,7 @@ export default function Products() {
         }}
       >
         <Image
-          src="/images/home.jpg"
+          src="/images/hero.jpg"
           alt="제주 노지감귤"
           width={700}
           height={450}
@@ -68,16 +69,16 @@ export default function Products() {
             🍊 제주 노지감귤 10kg
           </h3>
 
-          <p>✔ 제주 서귀포 산지직송</p>
-          <p>✔ 자연에서 자란 노지감귤</p>
-          <p>✔ 수확 후 당일 선별</p>
-          <p>✔ 신선하게 포장하여 발송</p>
+          <p>✅ 제주 서귀포 산지직송</p>
+          <p>✅ 자연에서 자란 노지감귤</p>
+          <p>✅ 수확 후 당일 선별</p>
+          <p>✅ 신선하게 포장하여 발송</p>
 
           <div
             style={{
               color: "#ff9900",
               fontSize: "26px",
-              margin: "25px 0",
+              margin: "25px 0 10px",
             }}
           >
             ★★★★★
@@ -85,14 +86,34 @@ export default function Products() {
 
           <p
             style={{
-              fontSize: "18px",
-              color: "#666",
-              marginBottom: "30px",
+              color: "#2e7d32",
+              fontWeight: "bold",
+              fontSize: "20px",
+              marginBottom: "20px",
             }}
           >
-            가격은 시기에 따라 달라질 수 있으므로
-            <br />
-            전화로 문의해 주세요.
+            🚚 전국 무료배송
+          </p>
+
+          <div
+            style={{
+              fontSize: "38px",
+              color: "#f57c00",
+              fontWeight: "bold",
+              marginBottom: "10px",
+            }}
+          >
+            45,000원
+          </div>
+
+          <p
+            style={{
+              fontSize: "16px",
+              color: "#666",
+              marginBottom: "35px",
+            }}
+          >
+            ※ 수확 시기에 따라 가격이 변동될 수 있습니다.
           </p>
 
           <a
@@ -101,14 +122,35 @@ export default function Products() {
               display: "inline-block",
               background: "#f57c00",
               color: "#fff",
-              padding: "16px 40px",
+              padding: "18px 55px",
+              borderRadius: "999px",
+              textDecoration: "none",
+              fontWeight: "bold",
+              fontSize: "22px",
+            }}
+          >
+            📞 전화 문의하기
+          </a>
+
+          <br />
+          <br />
+
+          <a
+            href="https://open.kakao.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: "inline-block",
+              background: "#FEE500",
+              color: "#000",
+              padding: "18px 45px",
               borderRadius: "999px",
               textDecoration: "none",
               fontWeight: "bold",
               fontSize: "20px",
             }}
           >
-            📞 전화 문의하기
+            💬 카카오톡 문의
           </a>
         </div>
       </div>
