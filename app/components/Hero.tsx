@@ -1,23 +1,21 @@
-import Image from "next/image";
-
 export default function Hero() {
   return (
     <section
+      id="home"
       style={{
         position: "relative",
+        width: "100%",
         height: "100vh",
-        overflow: "hidden",
+        backgroundImage: "url('/images/hero.jpg')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
       }}
     >
-      <Image
-        src="/images/hero.jpg"
-        alt="제주 감귤밭"
-        fill
-        style={{
-          objectFit: "cover",
-        }}
-      />
-
+      {/* 어두운 오버레이 */}
       <div
         style={{
           position: "absolute",
@@ -26,52 +24,96 @@ export default function Hero() {
         }}
       />
 
+      {/* 내용 */}
       <div
         style={{
           position: "relative",
           zIndex: 2,
-          height: "100%",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          color: "white",
-          textAlign: "center",
+          color: "#fff",
+          padding: "20px",
+          maxWidth: "800px",
         }}
       >
+        <p
+          style={{
+            fontSize: "22px",
+            letterSpacing: "3px",
+            marginBottom: "15px",
+            color: "#ffe082",
+            fontWeight: "bold",
+          }}
+        >
+          JEJU PREMIUM MANDARINS
+        </p>
+
         <h1
           style={{
             fontSize: "64px",
+            marginBottom: "25px",
             fontWeight: "bold",
-            marginBottom: "20px",
+            lineHeight: "1.2",
           }}
         >
           🍊 진제준 밀감농장
         </h1>
 
-        <p
+        <h2
           style={{
-            fontSize: "24px",
-            marginBottom: "40px",
+            fontSize: "36px",
+            marginBottom: "30px",
+            fontWeight: 600,
+            lineHeight: "1.5",
           }}
         >
-          제주 자연이 키운 달콤한 밀감을 만나보세요.
+          제주의 햇살과 바람이 키운
+          <br />
+          신선한 노지감귤
+        </h2>
+
+        <p
+          style={{
+            fontSize: "22px",
+            lineHeight: "1.8",
+            marginBottom: "40px",
+            color: "#f5f5f5",
+          }}
+        >
+          제주 서귀포에서 정성껏 재배한
+          <br />
+          노지감귤을 산지에서 직접 보내드립니다.
         </p>
 
-        <a
-          href="#products"
+        <div
           style={{
-            background: "#ff8c00",
+            display: "flex",
+            justifyContent: "center",
+            gap: "25px",
+            flexWrap: "wrap",
+            marginBottom: "45px",
+            fontSize: "20px",
+            fontWeight: "bold",
+          }}
+        >
+          <span>🍊 산지직송</span>
+          <span>🚚 전국 무료배송</span>
+          <span>🌿 자연 그대로 재배</span>
+        </div>
+
+        <a
+          href="tel:01098403855"
+          style={{
+            display: "inline-block",
+            background: "#f57c00",
             color: "#fff",
-            padding: "18px 45px",
+            padding: "18px 50px",
             borderRadius: "999px",
             textDecoration: "none",
             fontWeight: "bold",
-            fontSize: "20px",
-            boxShadow: "0 10px 25px rgba(0,0,0,0.3)",
+            fontSize: "22px",
+            boxShadow: "0 8px 25px rgba(0,0,0,0.3)",
           }}
         >
-          🍊 상품 보러가기
+          📞 지금 전화 문의하기
         </a>
       </div>
     </section>
