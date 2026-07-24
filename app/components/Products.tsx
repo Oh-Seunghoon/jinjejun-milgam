@@ -17,7 +17,7 @@ export default function Products() {
           marginBottom: "20px",
         }}
       >
-        🍊 테스트입니다
+        🍊 제주 노지감귤 10kg
       </h2>
 
       <p
