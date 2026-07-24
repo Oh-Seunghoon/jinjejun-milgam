@@ -15,6 +15,7 @@ export default function Products() {
           fontSize: "48px",
           color: "#f57c00",
           marginBottom: "20px",
+          fontWeight: "bold",
         }}
       >
         🍊 제주 노지감귤 10kg
@@ -28,9 +29,9 @@ export default function Products() {
           lineHeight: "1.8",
         }}
       >
-        정직한 농부의 마음으로,
+        제주 서귀포에서 정성껏 재배한
         <br />
-        가장 맛있는 제주 노지감귤을 전해드립니다.
+        신선한 노지감귤을 산지에서 직접 보내드립니다.
       </p>
 
       <div
@@ -66,38 +67,32 @@ export default function Products() {
               marginBottom: "25px",
             }}
           >
-            🍊 제주 노지감귤 10kg
+            🍊 제주 노지감귤 (10kg)
           </h3>
 
           <p>✅ 제주 서귀포 산지직송</p>
-          <p>✅ 자연에서 자란 노지감귤</p>
+          <p>✅ 자연 그대로 자란 노지감귤</p>
           <p>✅ 수확 후 당일 선별</p>
           <p>✅ 신선하게 포장하여 발송</p>
+          <p>✅ 전국 무료배송</p>
 
           <div
             style={{
-              color: "#ff9900",
-              fontSize: "26px",
-              margin: "25px 0 10px",
+              background: "#fff3e0",
+              color: "#e65100",
+              fontSize: "20px",
+              fontWeight: "bold",
+              padding: "12px",
+              borderRadius: "10px",
+              margin: "30px 0",
             }}
           >
-            ★★★★★
+            🍊 제철 감귤의 신선함을 그대로 전해드립니다.
           </div>
 
-          <p
-            style={{
-              color: "#2e7d32",
-              fontWeight: "bold",
-              fontSize: "20px",
-              marginBottom: "20px",
-            }}
-          >
-            🚚 전국 무료배송
-          </p>
-
           <div
             style={{
-              fontSize: "38px",
+              fontSize: "42px",
               color: "#f57c00",
               fontWeight: "bold",
               marginBottom: "10px",
@@ -113,7 +108,7 @@ export default function Products() {
               marginBottom: "35px",
             }}
           >
-            ※ 수확 시기에 따라 가격이 변동될 수 있습니다.
+            ※ 수확 시기와 작황에 따라 가격이 변동될 수 있습니다.
           </p>
 
           <a
@@ -127,12 +122,12 @@ export default function Products() {
               textDecoration: "none",
               fontWeight: "bold",
               fontSize: "22px",
+              marginBottom: "20px",
             }}
           >
             📞 전화 문의하기
           </a>
 
-          <br />
           <br />
 
           <a
