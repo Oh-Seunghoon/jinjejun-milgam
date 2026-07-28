@@ -34,18 +34,6 @@ export default function Hero() {
           maxWidth: "800px",
         }}
       >
-        <p
-          style={{
-            fontSize: "22px",
-            letterSpacing: "3px",
-            marginBottom: "15px",
-            color: "#ffe082",
-            fontWeight: "bold",
-          }}
-        >
-          JEJU PREMIUM MANDARINS
-        </p>
-
         <h1
           style={{
             fontSize: "64px",
@@ -65,7 +53,7 @@ export default function Hero() {
             lineHeight: "1.5",
           }}
         >
-          제주의 햇살과 바람이 키운
+          서귀포의 햇살과 바람이 키운
           <br />
           신선한 노지감귤
         </h2>
@@ -74,30 +62,14 @@ export default function Hero() {
           style={{
             fontSize: "22px",
             lineHeight: "1.8",
-            marginBottom: "40px",
+            marginBottom: "50px",
             color: "#f5f5f5",
           }}
         >
-          제주 서귀포에서 정성껏 재배한
+          서귀포에서 정성껏 재배한
           <br />
           노지감귤을 산지에서 직접 보내드립니다.
         </p>
-
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "25px",
-            flexWrap: "wrap",
-            marginBottom: "45px",
-            fontSize: "20px",
-            fontWeight: "bold",
-          }}
-        >
-          <span>🍊 산지직송</span>
-          <span>🚚 전국 무료배송</span>
-          <span>🌿 자연 그대로 재배</span>
-        </div>
 
         <a
           href="tel:01098403855"
@@ -113,7 +85,7 @@ export default function Hero() {
             boxShadow: "0 8px 25px rgba(0,0,0,0.3)",
           }}
         >
-          📞 지금 전화 문의하기
+          📞 전화 문의하기
         </a>
       </div>
     </section>

@@ -5,7 +5,7 @@ export default function Header() {
         position: "sticky",
         top: 0,
         zIndex: 1000,
-        background: "rgba(255,255,255,0.95)",
+        background: "rgba(255,255,255,0.97)",
         backdropFilter: "blur(10px)",
         boxShadow: "0 2px 10px rgba(0,0,0,0.08)",
       }}
@@ -22,8 +22,10 @@ export default function Header() {
       >
         <h2
           style={{
-            color: "#f57c00",
             margin: 0,
+            color: "#f57c00",
+            fontSize: "30px",
+            fontWeight: "bold",
           }}
         >
           🍊 진제준 밀감농장
@@ -32,13 +34,38 @@ export default function Header() {
         <div
           style={{
             display: "flex",
-            gap: "30px",
+            gap: "35px",
+            fontSize: "18px",
+            fontWeight: "600",
           }}
         >
-          <a href="#home">홈</a>
-          <a href="#about">농장소개</a>
-          <a href="#products">노지감귤 10kg</a>
-          <a href="#contact">문의하기</a>
+          <a
+            href="#home"
+            style={{ textDecoration: "none", color: "#333" }}
+          >
+            홈
+          </a>
+
+          <a
+            href="#about"
+            style={{ textDecoration: "none", color: "#333" }}
+          >
+            농장소개
+          </a>
+
+          <a
+            href="#products"
+            style={{ textDecoration: "none", color: "#333" }}
+          >
+            노지감귤 10kg
+          </a>
+
+          <a
+            href="#contact"
+            style={{ textDecoration: "none", color: "#333" }}
+          >
+            문의하기
+          </a>
         </div>
       </nav>
     </header>
