@@ -15,60 +15,49 @@ export default function Hero() {
         textAlign: "center",
       }}
     >
-      {/* 어두운 오버레이 */}
+      {/* Overlay */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          background: "rgba(0,0,0,0.45)",
+          background: "rgba(0,0,0,0.35)",
         }}
       />
 
-      {/* 내용 */}
+      {/* Content */}
       <div
         style={{
           position: "relative",
           zIndex: 2,
           color: "#fff",
           padding: "20px",
-          maxWidth: "800px",
+          maxWidth: "700px",
         }}
       >
         <h1
           style={{
-            fontSize: "64px",
-            marginBottom: "25px",
-            fontWeight: "bold",
-            lineHeight: "1.2",
+            fontSize: "clamp(42px, 7vw, 64px)",
+            fontWeight: 700,
+            marginBottom: "20px",
+            color: "#f57c00",
+            lineHeight: 1.2,
           }}
         >
           🍊 진제준 밀감농장
         </h1>
 
-        <h2
+        <p
           style={{
-            fontSize: "36px",
-            marginBottom: "30px",
-            fontWeight: 600,
-            lineHeight: "1.5",
+            fontSize: "clamp(22px, 3vw, 32px)",
+            lineHeight: 1.6,
+            marginBottom: "60px",
+            color: "#ffffff",
+            fontWeight: 400,
           }}
         >
           서귀포의 햇살과 바람이 키운
           <br />
-          신선한 노지감귤
-        </h2>
-
-        <p
-          style={{
-            fontSize: "22px",
-            lineHeight: "1.8",
-            marginBottom: "50px",
-            color: "#f5f5f5",
-          }}
-        >
-          서귀포에서 정성껏 재배한
-          <br />
-          노지감귤을 산지에서 직접 보내드립니다.
+          노지감귤
         </p>
 
         <a
@@ -77,15 +66,16 @@ export default function Hero() {
             display: "inline-block",
             background: "#f57c00",
             color: "#fff",
-            padding: "18px 50px",
+            padding: "18px 48px",
             borderRadius: "999px",
             textDecoration: "none",
+            fontSize: "20px",
             fontWeight: "bold",
-            fontSize: "22px",
-            boxShadow: "0 8px 25px rgba(0,0,0,0.3)",
+            transition: "0.3s",
+            boxShadow: "0 8px 20px rgba(0,0,0,0.25)",
           }}
         >
-          📞 전화 문의하기
+          주문 및 문의
         </a>
       </div>
     </section>
