@@ -57,7 +57,7 @@ export default function Header() {
             href="#products"
             style={{ textDecoration: "none", color: "#333" }}
           >
-            노지감귤 10kg
+            상품안내
           </a>
 
           <a

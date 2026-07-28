@@ -122,18 +122,6 @@ export default function Products() {
             <br />
           </p>
         </div>
-
-        <p
-          style={{
-            marginTop: "35px",
-            fontSize: "16px",
-            color: "#777",
-            lineHeight: "1.8",
-          }}
-        >
-          ※ 수확 시기에 따라 감귤의 크기와 색상은 조금씩 달라질 수
-          있습니다.
-        </p>
       </div>
     </section>
   );
