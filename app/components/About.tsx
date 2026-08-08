@@ -1,127 +1,69 @@
-import Image from "next/image";
-
 export default function About() {
   return (
     <section
       id="about"
       style={{
-        padding: "100px 20px",
         background: "#ffffff",
+        padding: "120px 20px",
       }}
     >
       <div
         style={{
           maxWidth: "1100px",
           margin: "0 auto",
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "center",
-          gap: "60px",
         }}
       >
-        {/* 사진 */}
-        <div
+        <img
+          src="/images/farm.jpg"
+          alt="진제준 밀감농장"
           style={{
-            flex: 1,
-            minWidth: "320px",
+            display: "block",
+            width: "100%",
+            height: "520px",
+            objectFit: "cover",
+            borderRadius: "24px",
+            marginBottom: "80px",
           }}
-        >
-          <Image
-            src="/images/hero.jpg"
-            alt="진제준 밀감농장"
-            width={600}
-            height={450}
-            style={{
-              width: "100%",
-              height: "420px",
-              objectFit: "cover",
-              borderRadius: "20px",
-              boxShadow: "0 12px 30px rgba(0,0,0,0.12)",
-            }}
-          />
-        </div>
+        />
 
-        {/* 소개 */}
         <div
           style={{
-            flex: 1,
-            minWidth: "320px",
+            maxWidth: "760px",
+            margin: "0 auto",
+            textAlign: "center",
           }}
         >
           <h2
             style={{
-              color: "#f57c00",
-              fontSize: "46px",
-              marginBottom: "20px",
+              margin: "0 0 35px",
+              fontSize: "clamp(36px, 5vw, 56px)",
+              lineHeight: 1.35,
+              fontWeight: 700,
+              color: "#222222",
+              letterSpacing: "-1.5px",
             }}
           >
-            🍊 진제준 밀감농장
-          </h2>
-
-          <h3
-            style={{
-              fontSize: "30px",
-              color: "#333",
-              lineHeight: "1.6",
-              marginBottom: "25px",
-            }}
-          >
-            서귀포의 햇살과 바람이 키운
+            좋은 감귤은
             <br />
-            자연 그대로의 노지감귤
-          </h3>
+            좋은 땅에서 시작됩니다.
+          </h2>
 
           <p
             style={{
-              fontSize: "20px",
-              lineHeight: "2",
-              color: "#555",
-              marginBottom: "35px",
+              margin: 0,
+              fontSize: "clamp(18px, 2.2vw, 24px)",
+              lineHeight: 1.9,
+              fontWeight: 400,
+              color: "#666666",
+              letterSpacing: "-0.3px",
             }}
           >
-            진제준 밀감농장은
-            <strong style={{ color: "#f57c00" }}> 서귀포시 토평동</strong>에서
-            노지감귤을 정성껏 재배하고 있습니다.
+            서귀포의 햇살과 바람,
             <br />
-            자연이 키운 감귤을 산지에서 직접 보내드립니다.
+            그리고 정성을 담아
+            <br />
+            노지감귤을 키우고 있습니다.
           </p>
-
-          <div
-            style={{
-              background: "#fff8ef",
-              borderRadius: "18px",
-              padding: "30px",
-              boxShadow: "0 6px 18px rgba(0,0,0,0.08)",
-            }}
-          >
-            <h4
-              style={{
-                marginTop: 0,
-                marginBottom: "20px",
-                color: "#f57c00",
-                fontSize: "28px",
-              }}
-            >
-              🍊 농장 정보
-            </h4>
-
-            <p
-              style={{
-                margin: 0,
-                fontSize: "19px",
-                lineHeight: "2",
-                color: "#444",
-              }}
-            >
-              📍 위치 : 서귀포시 토평동
-              <br />
-              🌿 재배 : 노지감귤
-              <br />
-              🚚 배송 : 전국 무료배송
-              <br />
-              📞 문의 : 010-9840-3855
-            </p>
-          </div>
         </div>
       </div>
     </section>
