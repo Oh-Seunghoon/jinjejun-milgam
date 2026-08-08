@@ -54,8 +54,8 @@ export default function About() {
             style={{
               margin: 0,
               color: "#555555",
-              fontSize: "clamp(18px, 2.2vw, 24px)",
-              lineHeight: 1.9,
+              fontSize: "clamp(21px, 2.5vw, 28px)",
+              lineHeight: 1.8,
               fontWeight: 400,
               letterSpacing: "-0.5px",
             }}
