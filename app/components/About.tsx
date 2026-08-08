@@ -4,7 +4,7 @@ export default function About() {
       id="about"
       style={{
         background: "#ffffff",
-        padding: "120px 20px",
+        padding: "100px 20px 120px",
       }}
     >
       <div
@@ -13,8 +13,9 @@ export default function About() {
           margin: "0 auto",
         }}
       >
+        {/* 농장 사진 */}
         <img
-          src="/images/farm.jpg"
+          src="/images/hero.jpg"
           alt="진제준 밀감농장"
           style={{
             display: "block",
@@ -26,6 +27,7 @@ export default function About() {
           }}
         />
 
+        {/* 농장 이야기 */}
         <div
           style={{
             maxWidth: "760px",
@@ -36,10 +38,10 @@ export default function About() {
           <h2
             style={{
               margin: "0 0 35px",
-              fontSize: "clamp(36px, 5vw, 56px)",
+              color: "#f57c00",
+              fontSize: "clamp(34px, 5vw, 52px)",
               lineHeight: 1.35,
               fontWeight: 700,
-              color: "#222222",
               letterSpacing: "-1.5px",
             }}
           >
@@ -51,11 +53,11 @@ export default function About() {
           <p
             style={{
               margin: 0,
+              color: "#555555",
               fontSize: "clamp(18px, 2.2vw, 24px)",
               lineHeight: 1.9,
               fontWeight: 400,
-              color: "#666666",
-              letterSpacing: "-0.3px",
+              letterSpacing: "-0.5px",
             }}
           >
             서귀포의 햇살과 바람,
