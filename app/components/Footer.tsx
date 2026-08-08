@@ -3,42 +3,49 @@ export default function Footer() {
     <footer
       style={{
         background: "#2e7d32",
-        color: "#fff",
+        color: "#ffffff",
+        padding: "55px 20px 30px",
         textAlign: "center",
-        padding: "50px 20px",
       }}
     >
-      <h3
+      <div
         style={{
-          fontSize: "32px",
-          marginBottom: "20px",
+          maxWidth: "900px",
+          margin: "0 auto",
         }}
       >
-        🍊 진제준 밀감농장
-      </h3>
+        {/* 농장 이름 */}
+        <h2
+          style={{
+            margin: "0 0 30px",
+            fontSize: "clamp(26px, 4vw, 36px)",
+            fontWeight: 700,
+            letterSpacing: "-1px",
+          }}
+        >
+          🍊 진제준 밀감농장
+        </h2>
 
-      <p
-        style={{
-          fontSize: "18px",
-          lineHeight: "1.8",
-          marginBottom: "25px",
-        }}
-      >
-        서귀포의 정성을 담아
-        <br />
-        신선한 노지감귤을 보내드립니다.
-      </p>
+        {/* 구분선 */}
+        <div
+          style={{
+            height: "1px",
+            background: "rgba(255,255,255,0.3)",
+            marginBottom: "25px",
+          }}
+        />
 
-      <p
-        style={{
-          fontSize: "15px",
-          opacity: 0.9,
-        }}
-      >
-        © 2025 진제준 밀감농장
-        <br />
-        All Rights Reserved.
-      </p>
+        {/* Copyright */}
+        <p
+          style={{
+            margin: 0,
+            fontSize: "14px",
+            opacity: 0.75,
+          }}
+        >
+          © 진제준 밀감농장. All rights reserved.
+        </p>
+      </div>
     </footer>
   );
 }
